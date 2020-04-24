@@ -11,6 +11,8 @@ import CoreData
 
 extension BrunchSpot {
     
+    @discardableResult
+    
     convenience init(name: String, summary: String = "No summary added", tier: String = "Unrated", context: NSManagedObjectContext = CoreDataStack.context) {
         self.init(context: context)
         self.name = name
